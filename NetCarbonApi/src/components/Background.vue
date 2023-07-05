@@ -1,12 +1,12 @@
 <template>
     <div class="background-container">
-      <!-- Votre contenu ici -->
+      
     </div>
   </template>
   
   <style>
   .background-container {
-    background: #333;
+    background: #d40d0d;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -15,6 +15,10 @@
   
   <script>
   export default {
+  data () {
+    return {
+    }
+  },
     name: 'App'
   }
   </script>

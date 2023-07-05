@@ -6,6 +6,8 @@ import Footer from './components/Footer.vue'
 import Graph from './components/PieGraph.vue'
 import GraphBar from './components/GraphBar.vue'
 import GoogleMap from "./components/GoogleMap.vue";
+import Landpad from "./components/Landpads.vue"
+import Mission from "./components/Mission.vue"
 
 
 
@@ -17,32 +19,35 @@ import GoogleMap from "./components/GoogleMap.vue";
 
 <template>
   <header>
-    <DashboardTitle/>
+    <DashboardTitle />
   </header>
   <main>
-    
+
     <div class="background-container">
       <div class="container2 ">
-    <RocketComponent />
-    <GraphBar/>
-    <Graph/>
-    <Lauchpad/>
-  </div>
-  <br>
-  <Lauchpad/><h1>futur emplacement de la map</h1>
-  <GoogleMap/>
-  
+        <RocketComponent />
+        <GraphBar />
+        <Graph />
+        <Lauchpad />
+      </div>
+      <br>
+      <div class="container2 ">
+<Mission />
+<Lauchpad />
+        <GoogleMap />
+        
+        <Landpad />
+      </div>
     </div>
-    
-  
-    
-  
+
+
+
+
   </main>
-  
+
   <footer>
-  <Footer/>
+    <Footer />
   </footer>
-  
 </template> 
 
 
@@ -56,22 +61,22 @@ import GoogleMap from "./components/GoogleMap.vue";
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
-  width: 100%;
-  height: 800px;
-  
+  width: auto;
+  height: 815px;
+
 }
 
-.graph{
+.graph {
   width: 30%;
 }
 
-.container2{
+.container2 {
 
-width: 100%;
-height: auto;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-flow: wrap;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
 }
 </style>
