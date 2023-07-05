@@ -1,5 +1,5 @@
 <template>
-  <div class="component-container">
+  <div class="component-container1">
     <h3 style="text-align: center;">List of Rockets :</h3>
     <select v-model="selectedRocket">
       <option v-for="rocket in rockets" :key="rocket[0]" :value="rocket[0]">{{ rocket[1] }}</option>
@@ -69,11 +69,12 @@ export default {
 </script>
 
 <style>
-.component-container {
+.component-container1 {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   margin-right: 10px;
+  width: 330px; /* Largeur souhaitée */
 }
 </style>

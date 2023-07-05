@@ -63,7 +63,7 @@
   
   <style>
   .rocket-image-container {
-    max-height: 250px;
+    max-height: 270px;
   }
   
   .component-container {
@@ -72,6 +72,12 @@
     border-radius: 10px;
     padding: 20px;
     margin-right: 10px;
+  }
+
+  select {
+    border-radius: 8px;
+    background-color: #ccc;
+    color: #000000;
   }
   </style>
   

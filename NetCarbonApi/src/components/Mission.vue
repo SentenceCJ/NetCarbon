@@ -3,7 +3,7 @@
       <h3 style="text-align: center;">SpaceX Mission History</h3>
       <br>
       <select v-model="selectedEvent" @change="displayEventDetails">
-        <option value="">Sélectionner un événement</option>
+        <option value="">Select an event</option>
         <option v-for="event in events" :value="event.id" :key="event.id">{{ event.title }}</option>
       </select>
       <div v-if="selectedEvent">

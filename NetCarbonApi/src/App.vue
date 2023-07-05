@@ -33,11 +33,12 @@ import Picture from "./components/Picture.vue"
       </div>
       <br>
       <div class="container2 ">
-        <Mission />
+       
+        <Landpad />
         <Lauchpad />
         <GoogleMap />
-
-        <Landpad />
+        <Mission />
+        
       </div>
     </div>
 

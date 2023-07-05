@@ -1,5 +1,5 @@
 <template>
-  <div class="component-container">
+  <div class="component-container2">
     <div class="container">
       <h3 style="text-align: center;">Use of rockets</h3>
       <canvas id="pie-chart" ></canvas>
@@ -39,13 +39,16 @@
 
 .container{
     width: 300px;
+    
 }
 
-.component-container {
+.component-container2 {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   margin-right: 10px;
+  
+  
 }
 </style>

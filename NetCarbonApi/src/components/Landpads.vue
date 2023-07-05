@@ -1,5 +1,5 @@
 <template>
-    <div class="component-container">
+    <div class="component-container3">
       <h3 style="text-align: center;">List of Landpads</h3>
       <select v-model="selectedLandpad" @change="getLandpadInfo">
         <option value="">Select a Landpad</option>
@@ -69,12 +69,14 @@
   </script>
   
   <style>
-  .component-container {
+  .component-container3 {
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     margin-right: 10px;
+    margin-left: 12px ;
+    width: 300px;
   }
   </style>
   
