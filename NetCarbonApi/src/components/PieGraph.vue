@@ -1,7 +1,7 @@
 <template>
   <div class="component-container">
     <div class="container">
-      <h3 style="text-align: center;">Utilisation des fusées</h3>
+      <h3 style="text-align: center;">Use of rockets</h3>
       <canvas id="pie-chart" ></canvas>
     </div></div>
   </template>
@@ -22,7 +22,7 @@
           datasets: [
             {
               data: [95,4, 1, 0],
-              backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#3ADF00'],
+              backgroundColor: ['#A389C1', '#8AB9C2', '#BDE17B', '#E0B189'],
             },
           ],
         };

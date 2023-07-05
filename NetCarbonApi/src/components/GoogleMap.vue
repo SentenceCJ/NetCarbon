@@ -1,6 +1,6 @@
 <template>
   <div class="component-container">
-    <h2 style="text-align: center;"> Position des launchpads et des landpads </h2>
+    <h2 style="text-align: center;"> Launchpads and Landpads Positions</h2>
     <br>
     <GMapMap
       :center="center"

@@ -1,16 +1,21 @@
 <template>
   <div class="component-container">
-    <h3 style="text-align: center;">Liste des fusées :</h3>
+    <h3 style="text-align: center;">List of Rockets :</h3>
     <select v-model="selectedRocket">
       <option v-for="rocket in rockets" :key="rocket[0]" :value="rocket[0]">{{ rocket[1] }}</option>
     </select>
     <div v-if="selectedRocketDetails">
       <br>
-      <p>Nom : {{ selectedRocketDetails.name }}</p>
-      <p>ID : {{ selectedRocketDetails.id }}</p>
-      <p>Taille : {{ selectedRocketDetails.height.meters }} m</p>
-      <p>Diamètre : {{ selectedRocketDetails.diameter.meters }} m</p>
-      <p>Poids : {{ selectedRocketDetails.mass.kg }} kg</p>
+      <h3>Details :</h3>
+      <p>Name : {{ selectedRocketDetails.name }}</p>
+      <p>First Flight Date : {{ selectedRocketDetails.first_flight }}</p>
+      <p>Height : {{ selectedRocketDetails.height.meters }} m</p>
+      <p>Diameter : {{ selectedRocketDetails.diameter.meters }} m</p>
+      <p>Mass : {{ selectedRocketDetails.mass.kg }} kg</p>
+      <p>Propellant 1 : {{ selectedRocketDetails.engines.propellant_1 }}</p>
+      <p>Propellant 2 : {{ selectedRocketDetails.engines.propellant_2 }}</p>
+      <p>Rocket Type : {{ selectedRocketDetails.engines.type }}</p>
+      <p>Cost : {{ selectedRocketDetails.cost_per_launch }} $</p>
     </div>
   </div>
 </template>

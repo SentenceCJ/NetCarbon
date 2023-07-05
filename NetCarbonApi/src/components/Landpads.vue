@@ -1,20 +1,21 @@
 <template>
     <div class="component-container">
-      <h3 style="text-align: center;">Liste des Landpads</h3>
+      <h3 style="text-align: center;">List of Landpads</h3>
       <select v-model="selectedLandpad" @change="getLandpadInfo">
-        <option value="">Sélectionner un Landpad</option>
+        <option value="">Select a Landpad</option>
         <option v-for="landpad in landpads" :value="landpad.id" :key="landpad.id">
           {{ landpad.name }}
         </option>
       </select>
       <div v-if="landpadInfo">
         <br>
-        <h3> Landpad sélectionné :</h3>
-        <p>Nom Complet : {{ landpadInfo.full_name }}</p>
-        <p>Région : {{ landpadInfo.region }}</p>
-        <p>Localité : {{ landpadInfo.locality }}</p>
+        <h3> Landpad selected :</h3>
+        <br>
+        <p>Full Name : {{ landpadInfo.full_name }}</p>
+        <p>Region : {{ landpadInfo.region }}</p>
+        <p>Locality : {{ landpadInfo.locality }}</p>
         <p>Landing Attempts : {{ landpadInfo.landing_attempts }}</p>
-        <p>Landing Successes : {{ landpadInfo.landing_successes }}</p>
+        <p>Successful Landing : {{ landpadInfo.landing_successes }}</p>
       </div>
     </div>
   </template>

@@ -1,20 +1,21 @@
 <template>
   <div class="component-container">
-    <h3 style="text-align: center;">Liste des Launchpads SpaceX</h3>
+    <h3 style="text-align: center;">List of SpaceX Launchpads</h3>
     <select v-model="selectedLaunchpad" @change="fetchRockets">
-      <option value="">Sélectionnez un Launchpad</option>
+      <option value="">Select a Launchpad</option>
       <option v-for="launchpad in launchpads" :key="launchpad.id" :value="launchpad">{{ launchpad.name }}</option>
     </select>
     <div v-if="selectedLaunchpad">
       <br>
-      <h3>Launchpad sélectionné :</h3>
-      <p>Nom Complet : {{ selectedLaunchpad.full_name }}</p>
-      <p>Région : {{ selectedLaunchpad.region }}</p>
+      <h3>Launchpad selected :</h3>
+      <p>Full Name : {{ selectedLaunchpad.full_name }}</p>
+      <p>Region : {{ selectedLaunchpad.region }}</p>
       
-      <p>Nombre de lancements : {{ selectedLaunchpad.launch_attempts }}</p>
-      <p>Nombre de lancements réussis : {{ selectedLaunchpad.launch_successes }}</p>
+      <p>Launch Attempts : {{ selectedLaunchpad.launch_attempts }}</p>
+      <p>Successful Launch : {{ selectedLaunchpad.launch_successes }}</p>
       <br>
-      <h3>Fusées envoyées depuis le Launchpad :</h3>
+      <h3>Rockets launched from the Lauchpad :</h3>
+      <br>
       <div v-for="rocket in RocketsLauchpad" :key="rocket.id">
         <p>{{ rocket.name }}</p>
       </div>

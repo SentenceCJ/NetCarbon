@@ -8,6 +8,7 @@ import GraphBar from './components/GraphBar.vue'
 import GoogleMap from "./components/GoogleMap.vue";
 import Landpad from "./components/Landpads.vue"
 import Mission from "./components/Mission.vue"
+import Picture from "./components/Picture.vue"
 
 
 
@@ -28,14 +29,14 @@ import Mission from "./components/Mission.vue"
         <RocketComponent />
         <GraphBar />
         <Graph />
-        <Lauchpad />
+        <Picture />
       </div>
       <br>
       <div class="container2 ">
-<Mission />
-<Lauchpad />
+        <Mission />
+        <Lauchpad />
         <GoogleMap />
-        
+
         <Landpad />
       </div>
     </div>
