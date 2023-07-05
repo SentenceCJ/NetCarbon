@@ -8,7 +8,7 @@
       </select>
       <div v-if="selectedEvent">
         <br>
-        <p>Mission Name : {{ selectedEventTitle }}</p>
+        <p>Mission Name : {{ selectedEvent.title }}</p>
         <br>
         <p>Date & hour : {{ selectedEvent.event_date_utc }}</p>
         <!-- <p>{{ selectedEvent.details }}</p> -->
@@ -27,15 +27,6 @@
         events: [],
         selectedEvent: null,
       };
-    },
-    computed: {
-      selectedEventTitle() {
-        if (this.selectedEvent) {
-          const selectedEvent = this.events.find(event => event.id === this.selectedEvent);
-          return selectedEvent ? selectedEvent.title : '';
-        }
-        return '';
-      },
     },
     mounted() {
       this.fetchEvents();
