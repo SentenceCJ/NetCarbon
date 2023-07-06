@@ -30,22 +30,22 @@
       const selectedLandpad = ref('');
       const landpadInfo = ref(null);
   
-      // Appel à l'API pour récupérer la liste des landpads
+      
       const fetchLandpads = async () => {
         try {
           const response = await fetch('https://api.spacexdata.com/v4/landpads');
           const data = await response.json();
           landpads.value = data;
           if (data.length > 0) {
-            selectedLandpad.value = data[0].id; // Sélectionne le premier landpad par défaut
-            getLandpadInfo(); // Affiche les informations du landpad sélectionné par défaut
+            selectedLandpad.value = data[0].id; 
+            getLandpadInfo(); 
           }
         } catch (error) {
           console.error(error);
         }
       };
   
-      // Appel à l'API pour récupérer les informations d'un landpad sélectionné
+      
       const getLandpadInfo = async () => {
         try {
           const response = await fetch(`https://api.spacexdata.com/v4/landpads/${selectedLandpad.value}`);

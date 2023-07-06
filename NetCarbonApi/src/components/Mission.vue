@@ -37,8 +37,8 @@
           const response = await axios.get('https://api.spacexdata.com/v4/history');
           this.events = response.data;
           if (this.events.length > 0) {
-            this.selectedEvent = this.events[0].id; // Sélectionne le premier événement par défaut
-            this.displayEventDetails(); // Affiche les détails de l'événement sélectionné par défaut
+            this.selectedEvent = this.events[0].id; 
+            this.displayEventDetails(); 
           }
         } catch (error) {
           console.error(error);

@@ -43,8 +43,8 @@ export default {
         });
 
         if (this.rockets.length > 0) {
-          this.selectedRocket = this.rockets[0][0]; // Sélectionne la première fusée par défaut
-          this.getRocketDetails(); // Charge les détails de la fusée sélectionnée par défaut
+          this.selectedRocket = this.rockets[0][0]; 
+          this.getRocketDetails(); 
         }
       } catch (error) {
         console.error('Une erreur est survenue :', error);

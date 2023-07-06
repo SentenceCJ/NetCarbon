@@ -43,8 +43,8 @@ export default {
         .then(data => {
           this.launchpads = data;
           if (this.launchpads.length > 0) {
-            this.selectedLaunchpad = this.launchpads[0]; // Sélectionne le premier launchpad par défaut
-            this.fetchRockets(); // Charge les fusées du launchpad sélectionné par défaut
+            this.selectedLaunchpad = this.launchpads[0]; 
+            this.fetchRockets(); 
           }
         })
         .catch(error => {
