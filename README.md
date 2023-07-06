@@ -4,7 +4,7 @@ Installation
 
 - Git Clone (URL_DU_Projet)
 - Npm Install
--cd .\NetCarbonApi\ 
+- cd .\NetCarbonApi\ 
 - Npm Install Axios
 - Npm i vue-chart-3 chart.jscd
 - Npm install -S @fawmi/vue-google-maps
